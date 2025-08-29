@@ -34,19 +34,37 @@ const Services: React.FC = () => {
 
   const specializedServices = [
     {
-      title: 'Woolworths Supplier Excellence Programme (SEP)',
-      description: 'Comprehensive consultation for Woolworths supplier requirements and compliance standards.',
-      icon: Target
+      title: 'Woolworths Supplier Excellence Programme (SEP) Consultation',
+      description: 'Specialized consulting services aimed at assisting suppliers in meeting the stringent requirements and standards set forth by Woolworths, a major retailer in Australia',
+      image: '/Woolworths Supplier.png'
     },
     {
-      title: 'GFSI Standards (SQF & BRCGS)',
-      description: 'Expert guidance for Global Food Safety Initiative standards implementation and certification.',
-      icon: Award
+      title: 'GSFI Standards (SQF & BRCGS) Consultation',
+      description: 'Consultation involves helping suppliers implement and maintain GFSI-certified systems, such as SQF (Safe Quality Food), BRC (British Retail Consortium), or FSSC 22000 (Food Safety System Certification)',
+      image: '/GSFI Standard.png',
+      
     },
     {
       title: 'Costco Supplier Approved Programme',
-      description: 'Specialized support for meeting Costco\'s stringent supplier approval requirements.',
-      icon: Users
+      description: 'Focuses on meeting Costco’s specific requirements and standards for suppliers, including food safety, quality assurance, labeling, packaging, and other compliance aspects',
+     image: '/Costco supplier.jpg'
+    },
+    {
+      title: 'Hello Fresh Approved Supplier Programme',
+      description: 'Consultancy service aimed at ensuring suppliers meet Hello Fresh’s requirements for quality, safety, and operational standards to supply ingredients or products for Hello Fresh meal kits',
+      image: '/hello fresh.png'
+    },
+    {
+      title: 'My Food Bag Approved Supplier Programme',
+      description: 'Programme ensuring suppliers meet the specific standards and requirements set by My Food Bag for their meal kit ingredients or products',
+      image: '/my food bag.jpg'
+      
+    },
+    {
+      title: 'Coles Approved Supplier Programme (CFMSR)',
+      description: 'Helps suppliers comply with Coles’ standards under their Supplier Programme, which includes food safety, quality, traceability, sustainability, and ethical sourcing practices',
+      image: '/coles approved.png'
+     
     }
   ];
 
@@ -131,8 +149,8 @@ const Services: React.FC = () => {
                 key={index}
                 className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 group"
               >
-                <div className="bg-teal-100 p-4 rounded-full w-fit mx-auto mb-6 group-hover:bg-teal-600 transition-colors duration-300">
-                  <service.icon className="h-8 w-8 text-teal-600 group-hover:text-white transition-colors duration-300" />
+                <div className="bg-white p-4 rounded-full w-fit mx-auto mb-6 border border-transparent group-hover:border-black/20 transition-colors duration-300">
+                  <img src={service.image} className="h-12 w-24 object-contain text-teal-600 group-hover:text-white transition-colors duration-300" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
                   {service.title}
@@ -140,14 +158,14 @@ const Services: React.FC = () => {
                 <p className="text-gray-600 leading-relaxed text-center mb-6">
                   {service.description}
                 </p>
-                <div className="text-center">
+                {/* <div className="text-center">
                   <Link
                     to="/contact"
                     className="text-teal-600 font-semibold hover:text-teal-700 transition-colors duration-200"
                   >
                     Learn More →
                   </Link>
-                </div>
+                </div> */}
               </div>
             ))}
           </div>

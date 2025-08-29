@@ -27,10 +27,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
-              <div className="bg-teal-600 p-2 rounded-lg">
-                <Shield className="h-6 w-6 text-white" />
+              <div className="p-2 rounded-lg">
+                <img src="/Food Circlel Logo.png" alt="Food Circle"  className="h-12 w-12"/>
               </div>
-              <span className="text-2xl font-bold text-gray-900">Food Circle</span>
+              <span className="text-2xl font-bold text-cyan-500">Food Circle</span>
             </Link>
 
             {/* Desktop Navigation */}
@@ -109,9 +109,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="bg-teal-600 p-2 rounded-lg">
-                  <Shield className="h-5 w-5 text-white" />
-                </div>
+              <div className=" rounded-lg">
+                <img src="/Food Circlel Logo.png" alt="Food Circle"  className="h-12 w-12"/>
+              </div>
                 <span className="text-xl font-bold">Food Circle</span>
               </div>
               <p className="text-gray-400 leading-relaxed">
